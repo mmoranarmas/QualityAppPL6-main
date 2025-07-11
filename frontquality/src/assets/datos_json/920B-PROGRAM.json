@@ -1,0 +1,99 @@
+[
+    {
+      "nombre_proyecto": "920B-PROGRAM",
+      "nombre": "CASE, BLOWER; BELLMOUNTH",
+      "no_molde": "MAE-M01-CBB-TO92",
+      "no_parte": "AA116243-6170",
+      "no_mating": "N/A",
+      "material": "PP+20% TALCO COLOR NEGRO MAE-MP-260"
+    },
+    {
+      "nombre_proyecto": "920B-PROGRAM",
+      "nombre": "PLATE, COVER; FR LINK COVER (LHD)",
+      "no_molde": "MAE-M02-FR-PCFLC-TO92",
+      "no_parte": "AA116624-3141",
+      "no_mating": "N/A",
+      "material": "PP+20% TALCO COLOR NEGRO MAE-MP-260"
+    },
+    {
+      "nombre_proyecto": "920B-PROGRAM",
+      "nombre": "SHAFT; A/M LWR L-SIDE SINGLE SPEC.",
+      "no_molde": "MAE-M11-SA/MLLSS-TO92",
+      "no_parte": "AA116771-1012",
+      "no_mating": "N/A",
+      "material": "POM, COLOR NATURAL MAE-MP-265"
+    },
+    {
+      "nombre_proyecto": "920B-PROGRAM",
+      "nombre": "CASE, HEATER; FACE DOOR COVER",
+      "no_molde": "MAE-M03-CHFDC-TO92",
+      "no_parte": "AA116763-3620",
+      "no_mating": "N/A",
+      "material": "PP+20% TALCO COLOR NEGRO MAE-MP-260"
+    },
+    {
+      "nombre_proyecto": "920B-PROGRAM",
+      "nombre": "CASE, HEATER; Rr FOOT SPEC GRID-R, UPPER",
+      "no_molde": "MAE-M04-CHRFSG/RU-TO92",
+      "no_parte": "AA116763-4631",
+      "no_mating": "AA116763-4642",
+      "material": "PP+20% TALCO COLOR NATURAL MAE-MP-267"
+    },
+    {
+      "nombre_proyecto": "920B-PROGRAM",
+      "nombre": "CASE, HEATER; Rr FOOT SPEC GRID-L, UPPER",
+      "no_molde": "MAE-M05-CHRFSG/RU-TO92",
+      "no_parte": "AA116763-4642",
+      "no_mating": "AA116763-4631",
+      "material": "PP+20% TALCO COLOR NATURAL MAE-MP-267"
+    },
+    {
+      "nombre_proyecto": "920B-PROGRAM",
+      "nombre": "CASE, HEATER; Rr FOOT SPEC GRID-R, LOWER",
+      "no_molde": "MAE-M06-CHRFSG/RLL-TO92",
+      "no_parte": "AA116763-4651",
+      "no_mating": "N/A",
+      "material": "PP+20% TALCO COLOR NATURAL MAE-MP-267"
+    },
+    {
+      "nombre_proyecto": "920B-PROGRAM",
+      "nombre": "SHAFT, SUB-ASSY, AM LOWER DOOR SHAFT L SINGLE /DUAL",
+      "no_molde": "MAE-M08-SSALDSLS/D-TO92",
+      "no_parte": "AA116770-0710",
+      "no_mating": "AA116771-1012",
+      "material": "POM COLOR NATURAL MAE-MP-265"
+    },
+    {
+      "nombre_proyecto": "920B-PROGRAM",
+      "nombre": "SHAFT; FACE R-SIDE",
+      "no_molde": "MAE-M07-SFR-TO92",
+      "no_parte": "AA116771-0081",
+      "no_mating": "AA116771-0990",
+      "material": "PP+40% MICA, COLOR NATURAL MAE-MP-250"
+    },
+    {
+      "nombre_proyecto": "920B-PROGRAM",
+      "nombre": "SHAFT; A/M UP L-SIDE SINGLE SPEC",
+      "no_molde": "MAE-M09-SA/MULSS-TO92",
+      "no_parte": "AA116771-0831",
+      "no_mating": "N/A",
+      "material": "POM, COLOR NATURAL MAE-MP-265"
+    },
+    {
+      "nombre_proyecto": "920B-PROGRAM",
+      "nombre": "SHAFT; FACE L-SIDE",
+      "no_molde": "MAE-M10-SFL-TO92",
+      "no_parte": "AA116771-0990",
+      "no_mating": "AA116771-0081",
+      "material": "PP+40% MICA, COLOR NATURAL MAE-MP-250"
+    },
+    {
+      "nombre_proyecto": "920B-PROGRAM",
+      "nombre": "LEVER; A/M RACK-GEAR",
+      "no_molde": "MAE-M12-LA-MR-G-TO92",
+      "no_parte": "AA116784-8042",
+      "no_mating": "N/A",
+      "material": "PBT, COLOR NATURAL MAE-MP-266"
+    }
+  ]
+  

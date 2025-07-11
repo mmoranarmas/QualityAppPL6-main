@@ -1,0 +1,75 @@
+[
+    {
+      "nombre_proyecto": "TOYOTA S-PROGRAM",
+      "nombre": "PLATE; LAMINATED SLIDE DOOR CASE UP",
+      "no_molde": "MAE-M01-PLSDCU/B-S-PRO",
+      "no_parte": "AA116576-5402",
+      "no_mating": "AA116576-5412",
+      "material": "PPHF+20% TALCO COLOR NEGRO MAE-MP-260"
+    },
+    {
+      "nombre_proyecto": "TOYOTA S-PROGRAM",
+      "nombre": "PLATE; LAMINATED SLIDE DOOR CASE BOTTOM",
+      "no_molde": "MAE-M01-PLSDCU/B-S-PRO",
+      "no_parte": "AA116576-5412",
+      "no_mating": "AA116576-5402",
+      "material": "PPHF+20% TALCO COLOR NEGRO MAE-MP-260"
+    },
+    {
+      "nombre_proyecto": "TOYOTA S-PROGRAM",
+      "nombre": "DOOR; LAMINATED SLIDE DOOR SHEET No. 4",
+      "no_molde": "MAE-M02-DLSDS-S-PRO",
+      "no_parte": "AA116651-8541",
+      "no_mating": "N/A",
+      "material": "POM COLOR NATURAL MAE-MP-265"
+    },
+    {
+      "nombre_proyecto": "TOYOTA S-PROGRAM",
+      "nombre": "DOOR; LAMINATED SLIDE DOOR SHEET No. 3",
+      "no_molde": "MAE-M03-DLSDS-S-PRO",
+      "no_parte": "AA116651-8551",
+      "no_mating": "N/A",
+      "material": "ABS, COLOR NEGRO MAE-MP-269"
+    },
+    {
+      "nombre_proyecto": "TOYOTA S-PROGRAM",
+      "nombre": "DOOR; LAMINATED SLIDE DOOR SHEET No. 2",
+      "no_molde": "MAE-M02-DLSDS-S-PRO",
+      "no_parte": "AA116651-8560",
+      "no_mating": "N/A",
+      "material": "POM COLOR NATURAL MAE-MP-265"
+    },
+    {
+      "nombre_proyecto": "TOYOTA S-PROGRAM",
+      "nombre": "DOOR; LAMINATED SLIDE DOOR SHEET No. 1",
+      "no_molde": "MAE-M03-DLSDS-S-PRO",
+      "no_parte": "AA116651-8570",
+      "no_mating": "N/A",
+      "material": "ABS, COLOR NEGRO MAE-MP-269"
+    },
+    {
+      "nombre_proyecto": "TOYOTA S-PROGRAM",
+      "nombre": "SHAFT; AS MODE DOOR SHAFT",
+      "no_molde": "MAE-M04-SAMDS-S-PRO",
+      "no_parte": "AA116662-8030",
+      "no_mating": "N/A",
+      "material": "POM COLOR NATURAL MAE-MP-265"
+    },
+    {
+      "nombre_proyecto": "TOYOTA S-PROGRAM",
+      "nombre": "PLATE, COVER; MODE LINK COVER",
+      "no_molde": "MAE-M07-CMLA-S-PRO",
+      "no_parte": "AA116626-3764",
+      "no_mating": "N/A",
+      "material": "PP+20% TALC FILLED,BLACK COLOR MAE-MP-260"
+    },
+    {
+      "nombre_proyecto": "TOYOTA S-PROGRAM",
+      "nombre": "DOOR SUB-ASSY; MRAC3 RR-MODULE DOOR S-A FOR FACE & FOOT",
+      "no_molde": "MAE-M08-DMRMFFF-S-PRO",
+      "no_parte": "AA116750-5772",
+      "no_mating": "N/A",
+      "material": "PP+20% TALC FILLED,BLACK COLOR CIA-MP-019"
+    }
+  ]
+  

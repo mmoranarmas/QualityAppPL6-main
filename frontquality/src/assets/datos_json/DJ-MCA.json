@@ -1,0 +1,27 @@
+[
+    {
+      "nombre_proyecto": "DJ-MCA",
+      "nombre": "ENS. COMPUERTA TOMA DE AIRE",
+      "no_molde": "MAE-M02-TA-MCA",
+      "no_parte": "AA116660-5020",
+      "no_mating": "AA116784-3491",
+      "material": "PP-TD40 EDUMP002 TSP NEGRO MAEMP217"
+    },
+    {
+      "nombre_proyecto": "DJ-MCA",
+      "nombre": "ENS. COMPUERTA. (DEFR.PISO)",
+      "no_molde": "MAE-M03-DP-MCA",
+      "no_parte": "AA116740-9071",
+      "no_mating": "AA116784-3330",
+      "material": "PP-TD40 EDUMP002 TSP NEGRO MAEMP217"
+    },
+    {
+      "nombre_proyecto": "DJ-MCA",
+      "nombre": "ENSAMBLE COMPUERTA TRASERA",
+      "no_molde": "MAE-M04-DP-MCA",
+      "no_parte": "AA116750-2701",
+      "no_mating": "AA116784-3420",
+      "material": "PP-TD40 EDUMP002 TSP NEGRO MAEMP217"
+    }
+  ]
+  

@@ -1,0 +1,338 @@
+/* Variables para modo claro y oscuro */
+:root {
+  --background-color: #f9fafb;
+  --container-background: white;
+  --text-color: #1f2937;
+  --border-color: #e5e7eb;
+  --shadow-color: rgba(0, 0, 0, 0.05);
+  --hover-shadow-color: rgba(0, 0, 0, 0.1);
+  --card-title-color: #1f2937;
+  --stats-number-color: #111827;
+  --stats-label-color: #6b7280;
+
+  /* Colores específicos para los iconos */
+  --icon-color-blue: #60a5fa;
+  --icon-color-green: #4ade80;
+  --icon-color-purple: #a78bfa;
+
+  /* Colores de fondo para los iconos */
+  --icon-wrapper-bg-blue: rgba(96, 165, 250, 0.1);
+  --icon-wrapper-bg-green: rgba(74, 222, 128, 0.1);
+  --icon-wrapper-bg-purple: rgba(167, 139, 250, 0.1);
+
+  /* Variables para hover */
+  --icon-wrapper-hover-bg-blue: rgba(96, 165, 250, 0.2);
+  --icon-wrapper-hover-bg-green: rgba(74, 222, 128, 0.2);
+  --icon-wrapper-hover-bg-purple: rgba(167, 139, 250, 0.2);
+}
+
+/* Modo oscuro */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: #111827;
+    --container-background: #1f2937;
+    --text-color: #d1d5db;
+    --border-color: #374151;
+    --shadow-color: rgba(0, 0, 0, 0.3);
+    --hover-shadow-color: rgba(0, 0, 0, 0.4);
+    --card-title-color: #e5e7eb;
+    --stats-number-color: #f3f4f6;
+    --stats-label-color: #9ca3af;
+  }
+}
+
+.dashboard {
+  min-height: 100vh;
+  background: linear-gradient(180deg, var(--background-color) 0%, var(--container-background) 100%);
+}
+
+.container {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.header {
+  margin-bottom: 3rem;
+}
+
+.title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: var(--text-color);
+  letter-spacing: -0.025em;
+}
+
+.title-name {
+  color: var(--icon-color-blue);
+  display: block;
+  font-size: 2.5rem;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.card {
+  background: var(--container-background);
+  border-radius: 0.75rem;
+  border: 1px solid var(--border-color);
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px var(--shadow-color);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px var(--hover-shadow-color);
+}
+
+.card-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.75rem;
+  flex-shrink: 0;
+  transition: transform 0.2s ease;
+}
+
+.card:hover .icon-wrapper {
+  transform: scale(1.1);
+}
+
+.icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.card-info {
+  flex: 1;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--card-title-color);
+  margin-bottom: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.stats {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+
+.stats-number {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--stats-number-color);
+  line-height: 1;
+}
+
+.stats-label {
+  font-size: 0.875rem;
+  color: var(--stats-label-color);
+}
+
+/* Estilos específicos para las variantes de color */
+.blue .icon-wrapper {
+  background-color: var(--icon-wrapper-bg-blue);
+  transition: background-color 0.3s ease;
+}
+
+.blue .icon {
+  color: var(--icon-color-blue);
+}
+
+.blue:hover .icon-wrapper {
+  background-color: var(--icon-wrapper-hover-bg-blue);
+}
+
+.blue:hover .card-title {
+  color: var(--icon-color-blue);
+}
+
+.green .icon-wrapper {
+  background-color: var(--icon-wrapper-bg-green);
+  transition: background-color 0.3s ease;
+}
+
+.green .icon {
+  color: var(--icon-color-green);
+}
+
+.green:hover .icon-wrapper {
+  background-color: var(--icon-wrapper-hover-bg-green);
+}
+
+.green:hover .card-title {
+  color: var(--icon-color-green);
+}
+
+.purple .icon-wrapper {
+  background-color: var(--icon-wrapper-bg-purple);
+  transition: background-color 0.3s ease;
+}
+
+.purple .icon {
+  color: var(--icon-color-purple);
+}
+
+.purple:hover .icon-wrapper {
+  background-color: var(--icon-wrapper-hover-bg-purple);
+}
+
+.purple:hover .card-title {
+  color: var(--icon-color-purple);
+}
+
+/* Logout styles */
+.logout-container {
+  position: fixed;
+  top: 1.5rem;
+  right: 1.5rem;
+  z-index: 50;
+}
+
+.logout-button {
+  background-color: var(--logout-button-bg);
+  border: none;
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: white;
+  box-shadow: 0 4px 6px var(--shadow-color);
+}
+
+.logout-button:hover {
+  background-color: var(--logout-button-hover-bg);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px var(--shadow-color);
+}
+
+.logout-bubble {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin-top: 0.5rem;
+  background-color: var(--logout-bubble-bg);
+  border: 1px solid var(--logout-bubble-border);
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  min-width: 8rem;
+  animation: fadeIn 0.2s ease;
+  box-shadow: 0 4px 6px var(--shadow-color);
+}
+
+.logout-bubble-button {
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 0.5rem 1rem;
+  color: var(--logout-bubble-text);
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: color 0.2s ease;
+  border-radius: 0.25rem;
+}
+
+.logout-bubble-button:hover {
+  color: var(--logout-bubble-text-hover);
+  background-color: var(--shadow-color);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mover el botón de cierre de sesión un poco más arriba que el Tab en pantallas pequeñas */
+@media (max-width: 768px) {
+  .logout-container {
+    top: auto;
+    bottom: 6rem; /* Ajusta este valor según la altura del Tab */
+    right: 1.5rem;
+  }
+
+  .logout-bubble {
+    top: auto;
+    bottom: 100%;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* Actualizar las sombras en el modo oscuro */
+@media (prefers-color-scheme: dark) {
+  .card {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  }
+
+  .card:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .title-name {
+    font-size: 2.25rem;
+  }
+
+  .cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    padding: 1.25rem;
+  }
+}
+
+.modal-create .form-input,
+.modal-create select,
+.modal-create textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 0.375rem;
+  border: 1px solid var(--border);
+  color: var(--foreground);
+  background-color: var(--background);
+  font-size: 0.875rem;
+  transition: all 0.2s ease;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}

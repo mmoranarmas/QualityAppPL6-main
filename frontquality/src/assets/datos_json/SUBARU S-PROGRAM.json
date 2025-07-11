@@ -1,0 +1,27 @@
+[
+    {
+      "nombre_proyecto": "SUBARU S-PROGRAM",
+      "nombre": "PLATE CASE UP",
+      "no_molde": "MAE-M05-PCUBS-PRO",
+      "no_parte": "AA116577-7880",
+      "no_mating": "AA116577-7890",
+      "material": "PPHF+20% TALCO COLOR NEGRO MAE-MP-260"
+    },
+    {
+      "nombre_proyecto": "SUBARU S-PROGRAM",
+      "nombre": "PLATE CASE BOTTOM",
+      "no_molde": "MAE-M05-PCUBS-PRO",
+      "no_parte": "AA116577-7890",
+      "no_mating": "AA116577-7880",
+      "material": "PPHF+20% TALCO COLOR NEGRO MAE-MP-260"
+    },
+    {
+      "nombre_proyecto": "SUBARU S-PROGRAM",
+      "nombre": "SHAFT; MODE DOOR SHAFT",
+      "no_molde": "MAE-M06-SMDSS-PRO",
+      "no_parte": "AA116771-0350",
+      "no_mating": "N/A",
+      "material": "POM COLOR NATURAL MAE-MP-265"
+    }
+  ]
+  

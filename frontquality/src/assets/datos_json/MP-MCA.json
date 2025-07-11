@@ -1,0 +1,106 @@
+[
+    {
+        "nombre_proyecto": "MP-MCA",
+        "nombre": "HOLDER MOTOR",
+        "no_molde": "MAE-M01-HM-MP",
+        "no_parte": "AA016251-0052",
+        "cavidades": 0,
+        "material": "PP-TD40 COLOR NEGRO MAE-MP-236\nTPE-V COLOR NATURAL MAE-MP-243"
+    },
+    {
+        "nombre_proyecto": "MP-MCA",
+        "nombre": "DOOR FR",
+        "no_molde": "MAE-M02-FR-MP",
+        "no_parte": "AA116741-6671",
+        "cavidades": 0,
+        "material": "PP-TD40 COLOR NATURAL MAE-MP-238\nTPE-V COLOR NATURAL MAE-MP-243"
+    },
+    {
+        "nombre_proyecto": "MP-MCA",
+        "nombre": "DOOR FRONT FACE",
+        "no_molde": "MAE-M03-DF-MP",
+        "no_parte": "AA116741-6706",
+        "cavidades": 0,
+        "material": "PP-TD40 COLOR NATURAL MAE-MP-238\nTPE-V COLOR NATURAL MAE-MP-243"
+    },
+    {
+        "nombre_proyecto": "MP-MCA",
+        "nombre": "DOOR, LEFT FRONT FOOT FLAP",
+        "no_molde": "MAE-M04-L/R-MP",
+        "no_parte": "AA116741-6712",
+        "cavidades": 0,
+        "material": "PP-TD40 COLOR NATURAL MAE-MP-238\nTPE-V COLOR NATURAL MAE-MP-243"
+    },
+    {
+        "nombre_proyecto": "MP-MCA",
+        "nombre": "DOOR, RIGHT FRONT FOOT FLAP",
+        "no_molde": "MAE-M04-L/R-MP",
+        "no_parte": "AA116741-6722",
+        "cavidades": 0,
+        "material": "PP-TD40 COLOR NATURAL MAE-MP-238\nTPE-V COLOR NATURAL MAE-MP-243"
+    },
+    {
+        "nombre_proyecto": "MP-MCA",
+        "nombre": "HOLDER PIPE, HEATER PIPES",
+        "no_molde": "MAE-M05-HP-MP",
+        "no_parte": "AA481811-0112",
+        "cavidades": 0,
+        "material": "PP-GF25 COLOR NEGRO MAE-MP-239\nPP+SEBS COLOR NATURAL MAE-MP-240"
+    },
+    {
+        "nombre_proyecto": "MP-MCA",
+        "nombre": "COVER MOTOR",
+        "no_molde": "MAE-M06-CM-MP",
+        "no_parte": "AA045862-0021",
+        "cavidades": 0,
+        "material": "PP-TD40 COLOR NEGRO MAE-MP-236"
+    },
+    {
+        "nombre_proyecto": "MP-MCA",
+        "nombre": "COVER BLOWER CONTROLLER",
+        "no_molde": "MAE-M11-CB-MP",
+        "no_parte": "AA116625-2402",
+        "cavidades": 0,
+        "material": "PP-TD20 COLOR NEGRO CIA-MP-019"
+    },
+    {
+        "nombre_proyecto": "MP-MCA",
+        "nombre": "DOOR, DEFROST SECONDARY FLAP",
+        "no_molde": "MAE-M07-DD-MP",
+        "no_parte": "AA116741-6694",
+        "cavidades": 0,
+        "material": "PP-TD40 COLOR NATURAL MAE-MP-238"
+    },
+    {
+        "nombre_proyecto": "MP-MCA",
+        "nombre": "DOOR REAR MODE",
+        "no_molde": "MAE-M08-DR-MP",
+        "no_parte": "AA116741-6731",
+        "cavidades": 0,
+        "material": "PP-TD40 COLOR NATURAL MAE-MP-238"
+    },
+    {
+        "nombre_proyecto": "MP-MCA",
+        "nombre": "SHAFT, SZ FRONT LEFT MIX",
+        "no_molde": "MAE-M09-SL/R-MP",
+        "no_parte": "AA116771-0871",
+        "cavidades": 0,
+        "material": "PA66-GF33 COLOR NATURAL CIA-MP-040"
+    },
+    {
+        "nombre_proyecto": "MP-MCA",
+        "nombre": "SHAFT, SZ FRONT RIGHT MIX",
+        "no_molde": "MAE-M09-SL/R-MP",
+        "no_parte": "AA116771-0881",
+        "cavidades": 0,
+        "material": "PA66-GF33 COLOR NATURAL CIA-MP-040"
+    },
+    {
+        "nombre_proyecto": "MP-MCA",
+        "nombre": "SHAFT, DZ FRONT MIX",
+        "no_molde": "MAE-M10-SF-MP",
+        "no_parte": "AA116771-0981",
+        "cavidades": 0,
+        "material": "PA66-GF33 COLOR NATURAL CIA-MP-040"
+    }
+]

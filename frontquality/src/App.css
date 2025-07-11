@@ -1,0 +1,310 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.login-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .login-card {
+    width: 75%;
+    max-width: 100%;
+    padding: 20px;
+    border-radius: 30px;
+    animation: fadeIn 1s ease-in-out;
+  }
+
+  .login-button{
+    margin-top: 8%;
+  }
+
+  @keyframes sh02 {
+    from {
+      opacity: 0;
+      left: 0%;
+    }
+  
+    50% {
+      opacity: 1;
+    }
+  
+    to {
+      opacity: 0;
+      left: 100%;
+    }
+  }
+  
+  
+  .login-logo {
+    margin-left: 30%;
+    max-width: 40%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: contain; 
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  
+  .login-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .login-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .login-card {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .register-content {
+    padding: 16px;
+  }
+  
+  .register-header {
+    text-align: center;
+    margin-bottom: 16px;
+  }
+  
+  .register-footer {
+    padding: 8px;
+  }
+  ion-modal#register-modal {
+  --height: 60%;
+  --border-radius: 16px;
+  --box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+  .ioninput {
+    margin-bottom: 12px;
+  }
+  
+  .login-logo {
+    width: 100px;
+    margin: 0 auto;
+  }
+  
+  .toggle-button {
+    margin-top: 16px;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .ion-text-center p {
+    margin-top: 20px;
+  }
+  
+  .ioninput {
+    margin-top: 4%;
+  }
+  
+
+  :root {
+    --border-height: 1px;
+    --border-before-color: rgba(221, 221, 221, 0.39);
+    --border-after-color: #5891ff;
+    --input-hovered-color: #4985e01f;
+  }
+
+  .ioninput {
+    width: 100%;
+    font-size: 0.9rem;
+    background-color: transparent;
+    width: 100%;
+    box-sizing: border-box;
+    padding-inline: 0.5em;
+    padding-block: 0.7em;
+    border: none;
+    border-bottom: var(--border-height) solid var(--border-before-color);
+  }
+
+  .ioninput-border{
+    position: absolute;
+    background: var(--border-after-color);
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s;
+  }
+
+  .ioninput:focus {
+    border-bottom: 2px solid #5b5fc7;
+  }
+
+  
+  .splash-screen {
+    text-align: center; /* Centra el texto horizontalmente */
+  }
+  
+  .splash-logo {
+    width: 150px; /* Ajusta el tamaño según sea necesario */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin-bottom: 20px; /* Espacio entre el logo y el texto */
+    margin-left: 45%;
+  }
+  
+  .loading-message {
+    font-size: 24px; /* Tamaño de fuente del mensaje */
+    font-weight: bold; /* Hacer el texto en negrita */
+    margin-bottom: 20px; /* Espacio entre el mensaje y el spinner */
+  }
+  
+  ion-spinner {
+    --spinner-width: 50px; /* Tamaño del spinner */
+    --spinner-height: 50px; /* Tamaño del spinner */
+  }
+
+  
+  /* Ajustes específicos para dispositivos móviles */
+  @media (max-width: 767px) {
+    .login-card {
+      width: 90%;
+      padding: 15px;
+    }
+  
+    .login-button {
+      font-size: 1rem;
+    }
+  
+    .ion-text-center p {
+      font-size: 0.9rem;
+    }
+    .ioninput{
+        margin-top: 10%;
+    }
+    .splash-logo{
+      margin-left: 30%;
+    }
+  }
+  
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 16px;
+    padding: 16px;
+  }
+  
+  @media (min-width: 600px) {
+    .grid-container {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+
+  
+  /* styles.css */
+
+/* Estilos para el tema oscuro */
+@media (prefers-color-scheme: dark) {
+  .theme-card {
+    background-color: #000000;
+    color: #e0e0e0; /* Color del texto en el tema oscuro */
+  }
+
+  .theme-card .ion-card-title,
+  .theme-card .ion-card-subtitle,
+  .theme-card .ion-card-content,
+  .theme-card .ion-label {
+    color: #e0e0e0; /* Asegúrate de que todos los textos sean este color en el tema oscuro */
+  }
+  body {
+    color: #e0e0e0;
+  }
+}
+
+/* Estilos para el tema claro */
+@media (prefers-color-scheme: light) {
+  .theme-card {
+    background-color: #ffffff;
+    color: #000000;
+  }
+
+  .theme-card .ion-card-title,
+  .theme-card .ion-card-subtitle,
+  .theme-card .ion-card-content,
+  .theme-card .ion-label {
+    color: #000000;
+  }
+}
+
+.board-card {
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  min-height: 90%;
+  max-height: 90%;
+}
+
+.board-card:hover {
+  transform: scale(1.05);
+}
+
+.menu-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.menu-icon:hover {
+  color: var(--ion-color-primary);
+}
+
+
+
+.rotating-icon:hover {
+  transform: rotate(180deg);
+}
+
+.board-card {
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  min-height: 90%;
+  max-height: 90%;
+}
+
+.board-card:hover {
+  transform: scale(1.05);
+}
+
+.box-shadow-none {
+  box-shadow: none !important;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto;
+  width: 35%; 
+}
+
+
+.espacio {
+  margin-bottom: 10%;
+}

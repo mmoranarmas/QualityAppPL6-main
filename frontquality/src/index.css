@@ -1,0 +1,223 @@
+:root {
+  --ion-color-primary: #2e2e2e;
+  --ion-color-primary-rgb: 56, 128, 255;
+  --ion-color-primary-contrast: #ffffff;
+  --ion-color-primary-contrast-rgb: 255, 255, 255;
+  --ion-color-primary-shade: #1e4890;
+  --ion-color-primary-tint: #213f72;
+
+  /* light mode colors */
+  --ion-background-color: #ffffff;
+  --ion-text-color: #000000;
+
+  --ion-select-option-text-color: #efefef; /* Color del texto de las opciones */
+  --ion-select-option-background-color: #ffffff; /* Color de fondo de las opciones */
+  --ion-select-option-background-color-focused: #f0f0f0; /* Color de fondo de la opción enfocada */
+  --ion-alert-button-ok: #fff;
+
+  --ion-color-dash: #3a3a3a;
+}
+
+body.dark {
+  --ion-background-color: #2a2a2a;
+  --ion-text-color: #e0e0e0;
+
+  --ion-color-primary: #3a3a3a;
+  --ion-color-primary-rgb: 58, 58, 58;
+  --ion-color-primary-contrast: #ffffff;
+  --ion-color-primary-contrast-rgb: 255, 255, 255;
+  --ion-color-primary-shade: #333333;
+  --ion-color-primary-tint: #4a4a4a;
+
+
+
+  --ion-color-dash: #e5e4e4;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+main {
+  --sql-query: SELECT name FROM test;
+  background: paint(sql-db);
+}
+
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+ion-toolbar {
+  --background: var(--ion-toolbar-background);
+  --color: var(--ion-toolbar-text-color);
+}
+
+.custom-menu {
+  max-width: 304px; /* Ajusta el ancho máximo según tus necesidades */
+  max-height: 100vh; /* Ajusta la altura máxima según tus necesidades */
+  overflow-y: auto; /* Permite desplazamiento si el contenido es más grande que la altura máxima */
+}
+
+.splash-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: var(--ion-color-primary);
+  color: white;
+}
+
+.splash-logo {
+  width: 150px;
+  height: auto;
+}
+
+.loading-message {
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+
+@media (max-width: 767px) {
+  
+}
+
+.action-sheet-dark {
+  --color: #ffffff; /* Texto en blanco */
+  --ion-color-primary: #ffffff; /* Color primario blanco */
+  --ion-color-primary-contrast: #aeaeae; /* Contraste del color primario */
+  --ion-color-secondary: #ffffff; /* Color secundario blanco */
+  --ion-color-secondary-contrast: #aeaeae; /* Contraste del color secundario */
+}
+
+.action-sheet-dark .action-sheet-button {
+  color: #ffffff; /* Texto de los botones en blanco */
+}
+
+.action-sheet-dark .action-sheet-button-icon {
+  color: #ffffff; /* Iconos de los botones en blanco */
+}
+
+.action-sheet-dark .action-sheet-button:hover {
+  background-color: #8e8e8e; /* Fondo gris oscuro al hacer hover */
+  color: #ffffff; /* Texto en blanco al hacer hover */
+}
+
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+  .action-sheet-dark .action-sheet-group {
+    background-color: #2A2A2A !important; 
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+
+  /* Estilo para tema oscuro */
+  body.dark .alert-wrapper  {
+    background-color: #2A2A2A !important; 
+    --color: #ffffff; /* Texto en blanco */
+    --ion-color-primary: #ffffff; /* Color primario blanco */
+    --ion-color-primary-contrast: #aeaeae; /* Contraste del color primario */
+    --ion-color-secondary: #ffffff; /* Color secundario blanco */
+    --ion-color-secondary-contrast: #aeaeae; /* Contraste del color secundario */
+  }
+
+  /* Estilo para tema claro */
+  body.light .alert-wrapper {
+    background-color: #FFFFFF !important; 
+    color: #000000; 
+  }
+}
+
+body.dark .alert-wrapper  {
+  background-color: #2A2A2A !important; 
+  --color: #ffffff; /* Texto en blanco */
+  --ion-color-primary: #ffffff; /* Color primario blanco */
+  --ion-color-primary-contrast: #aeaeae; /* Contraste del color primario */
+  --ion-color-secondary: #ffffff; /* Color secundario blanco */
+  --ion-color-secondary-contrast: #aeaeae; /* Contraste del color secundario */
+}
+
+/* Estilo para tema claro */
+body.light .alert-wrapper {
+  background-color: #FFFFFF !important; 
+  color: #000000; 
+}
+
+
+/* Muestra el IonMenuToggle solo en pantallas pequeñas */
+@media (max-width: 767px) {
+  .menu-toggle-mobile {
+    display: block;
+  }
+}
+
+/* Oculta el IonMenuToggle en pantallas grandes */
+@media (min-width: 768px) {
+  .menu-toggle-mobile {
+    display: none;
+  }
+}
+
+/* Muestra el contenido del menú solo en pantallas grandes */
+@media (min-width: 768px) {
+  .menu-content-desktop {
+    display: block;
+  }
+}
+
+/* Oculta el contenido del menú en pantallas pequeñas */
+@media (max-width: 767px) {
+  .menu-content-desktop {
+    display: none;
+  }
+}
+
+/* global.css */
+/* ... otros estilos ... */
+
+/* Estilos para el modo oscuro */
+.dark-select {
+  --background: #2c2c2c;
+  --color: #ffffff;
+  --placeholder-color: #a0a0a0;
+  --placeholder-opacity: 1;
+  --icon-color: #ffffff;
+}
+
+.dark-select .select-icon {
+  color: #ffffff;
+}
+
+.dark-select-options {
+  background: #2c2c2c;
+  color: #ffffff;
+}
+
+/* Estilos para el modo claro */
+.light-select {
+  --background: #ffffff;
+  --color: #000000;
+  --placeholder-color: #757575;
+  --placeholder-opacity: 1;
+  --icon-color: #000000;
+}
+
+.light-select .select-icon {
+  color: #000000;
+}
+
+.light-select-options {
+  background: #ffffff;
+  color: #000000;
+}

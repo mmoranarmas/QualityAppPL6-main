@@ -1,0 +1,83 @@
+:root {
+  /* Colores para el tema light */
+  --bottom-menu-bg-light: #ffffff;
+  --bottom-menu-text-light: #6b7280;
+  --bottom-menu-active-text-light: #3b82f6;
+  --bottom-menu-shadow-light: rgba(0, 0, 0, 0.1);
+
+  /* Colores para el tema dark */
+  --bottom-menu-bg-dark: #1f2937;
+  --bottom-menu-text-dark: #9ca3af;
+  --bottom-menu-active-text-dark: #60a5fa;
+  --bottom-menu-shadow-dark: rgba(0, 0, 0, 0.5);
+}
+
+/* Aplicar colores según el tema */
+.bottom-menu {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--bottom-menu-bg-light);
+  box-shadow: 0 -2px 10px var(--bottom-menu-shadow-light);
+  padding: 10px 0;
+  z-index: 1000;
+}
+
+.bottom-menu-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: none;
+  border: none;
+  color: var(--bottom-menu-text-light);
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.bottom-menu-item.active {
+  color: var(--bottom-menu-active-text-light);
+}
+
+.bottom-menu-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.bottom-menu-label {
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.bottom-menu-spacer {
+  height: 60px; /* Ajusta según la altura del menú */
+}
+
+/* Modo oscuro */
+@media (prefers-color-scheme: dark) {
+  .bottom-menu {
+    background-color: var(--bottom-menu-bg-dark);
+    box-shadow: 0 -2px 10px var(--bottom-menu-shadow-dark);
+  }
+
+  .bottom-menu-item {
+    color: var(--bottom-menu-text-dark);
+  }
+
+  .bottom-menu-item.active {
+    color: var(--bottom-menu-active-text-dark);
+  }
+}
+
+/* En tu archivo de estilos del Tab */
+.tab-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 40;
+  padding: 1rem;
+}

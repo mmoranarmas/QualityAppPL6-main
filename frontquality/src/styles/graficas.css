@@ -1,0 +1,337 @@
+.graficas-container {
+    padding: 2rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: #333;
+    margin-top: -30px;
+    margin-bottom: -70px;
+  }
+
+  .content-wrapper {
+    max-width: 1200px;
+    margin: 2rem auto;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+
+  .scrollable-content {
+    overflow-y: auto;
+    max-height: calc(100vh - 4rem);
+    padding-right: 1rem;
+  }
+
+  .title {
+    color: var(--foreground);
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    border-bottom: 3px solid var(--primary);
+    padding-bottom: 0.5rem;
+    display: inline-block;
+  }
+
+  .section-buttons-gf {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .button-gf {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: var(--radius);
+    background-color: var(--secondary);
+    color: var(--secondary-foreground);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .button-gf.active {
+    background-color: var(--primary);
+    color: var(--primary-foreground);
+  }
+
+  .button-gf:hover {
+    background-color: var(--primary);
+    color: var(--primary-foreground);
+  }
+
+  .card {
+    background-color: var(--card);
+    color: var(--card-foreground);
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .description {
+    font-size: 1.1rem;
+    color: var(--muted-foreground);
+    margin-bottom: 2rem;
+  }
+
+  .chart-placeholder {
+    height: 400px;
+    background-color: var(--secondary);
+    border-radius: var(--radius);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--muted-foreground);
+    border: 2px dashed var(--border);
+  }
+
+  .chart-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .part-selector {
+    margin-bottom: 1rem;
+  }
+
+  .part-selector select,
+  .project-selector select {
+    padding: 0.5rem;
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    background-color: var(--secondary);
+    color: var(--secondary-foreground);
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .error-message {
+    color: #dc3545;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    padding: 0.75rem 1.25rem;
+    border-radius: 0.25rem;
+    margin-bottom: 1rem;
+  }
+
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background-color: var(--card);
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.75rem;
+  min-width: 650px;
+}
+
+.header-cell {
+  background-color: var(--primary, #3498db);
+  color: white;
+  padding: 8px 6px;
+  text-align: center;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  position: sticky;
+  top: 0;
+}
+
+.month-cell {
+  min-width: 60px;
+}
+
+.acumulado-cell {
+  background-color: #2c3e50;
+  color: white;
+  font-weight: 700;
+  min-width: 80px;
+}
+
+.label-cell {
+  font-weight: 600;
+  text-align: left;
+  background-color: #2c3e50;
+  padding: 8px 10px;
+  position: sticky;
+  left: 0;
+  z-index: 1;
+}
+
+.data-cell {
+  padding: 8px 6px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+  transition: background-color 0.2s;
+}
+
+tbody tr:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+tbody tr:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.percentage-cell {
+  font-weight: 600;
+  position: relative;
+  text-align: center;
+}
+
+.percentage-cell.success {
+  color: #28a745;
+}
+
+.percentage-cell.warning {
+  color: #fd7e14;
+}
+
+.percentage-cell.danger {
+  color: #dc3545;
+}
+
+.warning-indicator {
+  display: inline-block;
+  margin-left: 4px;
+  font-size: 0.7rem;
+}
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .graficas-container {
+      padding: 1rem;
+    }
+    
+    .title {
+      font-size: 2rem;
+    }
+    
+    .card {
+      padding: 1.5rem;
+    }
+    
+    .section-buttons-gf {
+      flex-direction: column;
+    }
+
+    .button-gf {
+      width: 100%;
+    }
+    
+    .chart-placeholder {
+      margin-top: 1rem;
+      height: 400px;
+      background-color: var(--secondary);
+      border-radius: var(--radius);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: var(--muted-foreground);
+      border: none;
+  
+    }
+    
+    .table-container {
+      margin-bottom: 1.5rem;
+    }
+    
+    .data-table {
+      min-width: 650px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .chart-placeholder {
+      height: 300px;
+    }
+
+    .description {
+      font-size: 1rem;
+    }
+
+    .title {
+      font-size: 1.5rem;
+    }
+  }
+  
+  .selectors-container {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap; 
+  }
+
+  .selectors-container select {
+    padding: 0.5rem;
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    background-color: var(--secondary);
+    color: var(--secondary-foreground);
+    width: 100%;
+    max-width: 300px;
+  }
+
+  @media (min-width: 768px) {
+    .selectors-container {
+      flex-wrap: nowrap; 
+    }
+  }
+
+
+  .controls-container {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+    align-items: center;
+  }
+  
+  .project-selector, .status-selector {
+    padding: 8px 12px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    background-color: white;
+    font-size: 14px;
+  }
+  
+  .project-selector {
+    min-width: 200px;
+  }
+  
+  .status-selector {
+    min-width: 150px;
+  }
+  
+  .error-message {
+    color: #d32f2f;
+    background-color: #fde8e8;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+  }
+  
+  .no-data-message {
+    text-align: center;
+    padding: 40px;
+    font-size: 18px;
+    color: #666;
+  }

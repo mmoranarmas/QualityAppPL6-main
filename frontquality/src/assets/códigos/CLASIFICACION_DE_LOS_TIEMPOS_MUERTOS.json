@@ -1,0 +1,166 @@
+{
+    "CLASIFICACION_DE_TIEMPOS_MUERTOS": [
+      {
+        "numero": 1,
+        "categoria": "Velocidad de Operacion",
+        "codigos": {
+          "A": "Falta habilidad de operador",
+          "B": "Operador en Entrenamiento",
+          "C": "Operador de Apoyo",
+          "D": "Operador otra linea",
+          "E": "Operador en Standby",
+          "F": "Operador no Planeado",
+          "G": "Error de operación (maquina)",
+          "H": "Pieza atorada error de operación",
+          "I": "Tiempo de maquina excedido",
+          "J": "Entrenamiento Cruzado",
+          "K": "Acudir a enfermeria / Otros",
+          "L": "Robot, ciclo excedido",
+          "M": "Retardo en el ciclo",
+          "N": "Falta de operador"
+        }
+      },
+      {
+        "numero": 2,
+        "categoria": "Ajustes",
+        "codigos": {
+          "A": "Cambio de dado (molde)",
+          "B": "Cambio de consumibles",
+          "C": "Cambio de inserto (modelo)",
+          "D": "De parametros de inyectora",
+          "E": "Ajuste de parametros de temorregulador",
+          "F": "Limpieza de molde",
+          "G": "cambio de resina",
+          "H": "Ajuste de robot",
+          "I": "Cambio de herramental de robot",
+          "J": "Purga de cañon",
+          "K": "Se cancela cavidad",
+          "L": "Se habilita cavidad",
+          "M": "Cambio de fechador"
+        }
+      },
+      {
+        "numero": 3,
+        "categoria": "Preparacion",
+        "codigos": {
+          "A": "Reunion de Equipo de trabajo",
+          "B": "5s",
+          "C": "Check list",
+          "D": "Flujo de 1ra pieza",
+          "E": "Alcanzar temperatura de barril",
+          "F": "Alcanzar temperatura de molde"
+        }
+      },
+      {
+        "numero": 4,
+        "categoria": "Defectos",
+        "codigos": {
+          "A": "Pieza Deformada",
+          "B": "Desprendimiento de inserto de molde",
+          "C": "Desprendimiento de guia o ceja",
+          "D": "Jetting, chorro libre (viborita)",
+          "E": "Mancha de superficie",
+          "F": "Pieza contaminada (Punto negro)",
+          "G": "Rebaba",
+          "H": "Pieza con Burbuja",
+          "I": "Linea de Union",
+          "J": "Pieza Quebrada",
+          "K": "Mancha de Grasa",
+          "L": "Pieza con Rechupe",
+          "M": "Disparo Corto",
+          "N": "Marca de Botadores",
+          "O": "Pieza quemada (efecto diesel)",
+          "P": "Manchas por humedad (rafaga)",
+          "Q": "Pieza de arranque",
+          "R": "Pieza con Golpe",
+          "S": "Pieza marcada por herramental de robot (Golpe)",
+          "T": "Pieza mal ensamblada",
+          "U": "Pieza mal retrabajada",
+          "V": "Pieza perforada"
+        }
+      },
+      {
+        "numero": 5,
+        "categoria": "Fallas de Maquina",
+        "codigos": {
+          "A": "Falla de cable limt switch en maquina",
+          "B": "Falla de chiller",
+          "C": "Falla de grua (facility)",
+          "D": "Falla de thermorregulador",
+          "E": "Falla de inyectora",
+          "F": "Falla de molde",
+          "G": "Falla de plastico pegado (enviado a taller)",
+          "H": "Falla de limit switch en molde",
+          "I": "Falla de carga de resina.",
+          "J": "Falla de torre de enfriamiento (facility)",
+          "K": "Falla de suministro de aire (facility)",
+          "L": "Falla de fuga agua (facility)",
+          "M": "Falla de equipo para cambio de moldes",
+          "N": "Limpieza de molde enviando a taller",
+          "O": "Falta Flujo de agua de molde",
+          "P": "Falta Flujo de agua de maquina",
+          "Q": "boquilla (Sprue) tapada enviando al taller",
+          "R": "Cavidad tapada de resina",
+          "S": "Fuga de agua molde",
+          "T": "Fuga de agua maquina",
+          "U": "Falla botador (ejector)",
+          "V": "Falla maquina pulir molde de maquina",
+          "W": "Fuga de aceite en maquina",
+          "X": "Falla de robot",
+          "Y": "Fallo de banda transportadora",
+          "Z": "Daños a herramental",
+          "AA": "Falla de noyo",
+          "AB": "falta de lubricación",
+          "AC": "Falla de prensa",
+          "AD": "Falla de gabinete eléctrico",
+          "AE": "Falla de dispositivo",
+          "AF": "Falla de guarda purgas",
+          "AG": "Falla de cañón"
+        }
+      },
+      {
+        "numero": 6,
+        "categoria": "Paros Intermitentes",
+        "codigos": {
+          "A": "Retirar sprue (boquilla) manual de molde en maquina .",
+          "B": "Retirar plastico pegado en maquina.",
+          "C": "Retirar colada pegado en molde",
+          "D": "Retiro de plastico en cañon",
+          "E": "Pieza pegada",
+          "F": "Cavidad tapada"
+        }
+      },
+      {
+        "numero": 7,
+        "categoria": "Falta de Material",
+        "codigos": {
+          "A": "Falta de cajas / equipo vacio por logistica",
+          "B": "Falta de recoleccion de procesos siguientes",
+          "C": "Falta de material x logistica",
+          "D": "Falta de recoleccion x logistica",
+          "E": "Falta de material liberado x Calidad",
+          "F": "Falta de procesos previos (ejemplo: caja sup, levas, placa central, bases)",
+          "G": "Cambio de plan de produccion",
+          "H": "Disponibilidad de Grua",
+          "I": "Falta de consumibles",
+          "J": "Falta de material en tolva"
+        }
+      },
+      {
+        "numero": 8,
+        "categoria": "Tiempos Deducibles",
+        "codigos": {
+          "A": "Juntas o eventos de compañía",
+          "B": "Inventario fisico",
+          "C": "Mantenimiento Planeado",
+          "D": "Corte o variacion de Servicios. (Agua, Luz)",
+          "E": "No plan de producción por fluctuaciones del cliente",
+          "F": "Pruebas piloto y prototipos (Antes de producción en masa)",
+          "G": "Cursos (dentro de turno)",
+          "H": "Simulacros de evacuación",
+          "I": "Comida",
+          "J": "Cambio de plan de producción"
+        }
+      }
+    ]
+  }
