@@ -2,7 +2,7 @@ import axios from 'axios';
 
 // API URL
 const URILOCAL = 'http://localhost:4000/api';
-const URIVERCEL = 'https://backquality-two.vercel.app/';
+const URIVERCEL = 'https://backqualityapp.vercel.app/api';
 const URI = URIVERCEL;
 
     const api = axios.create({
