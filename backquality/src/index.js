@@ -1,42 +1,47 @@
-require('dotenv').config();
+require("dotenv").config();
 const app = require("./app");
 const mongoose = require("mongoose");
 
-const port = process.env.PORT;
+const port = process.env.PORT || 3000;
 const URI = process.env.URI_MONGO;
 
-mongoose.set("strictQuery", false);
+// Evitar múltiples conexiones
+let isConnected = false;
 
-// Conexión inicial
-mongoose.connect(URI, {
-  serverSelectionTimeoutMS: 5000,
-  socketTimeoutMS: 45000,
-  connectTimeoutMS: 10000,
-  retryWrites: true,
-  retryReads: true
-})
-.then(() => console.log("Conectado a MongoDB Atlas"))
-.catch((error) => console.error("Error al conectar a MongoDB:", error));
+async function connectDB() {
+  if (isConnected) return;
 
-// Manejo de eventos de conexión
-mongoose.connection.on('connected', () => {
-  console.log('MongoDB conectado.');
+  try {
+    await mongoose.connect(URI, {
+      maxPoolSize: 10,
+      serverSelectionTimeoutMS: 30000,
+      connectTimeoutMS: 15000,
+      socketTimeoutMS: 45000,
+    });
+
+    isConnected = true;
+    console.log("MongoDB conectado");
+
+  } catch (err) {
+    console.error("Error al conectar a MongoDB:", err);
+    console.log("Reintentando conexión en 5 segundos...");
+    setTimeout(connectDB, 5000);
+  }
+}
+
+// Eventos
+mongoose.connection.on("disconnected", () => {
+  console.warn("MongoDB desconectado. Reintentando...");
+  isConnected = false;
+  connectDB();
 });
 
-mongoose.connection.on('error', (err) => {
-  console.error('Error de conexión MongoDB:', err);
+mongoose.connection.on("error", (err) => {
+  console.error("Error MongoDB:", err);
 });
 
-mongoose.connection.on('disconnected', () => {
-  console.warn('MongoDB desconectado. Reintentando en 5 segundos...');
-  setTimeout(() => mongoose.connect(URI), 5000);
-});
-
-mongoose.connection.on('reconnected', () => {
-  console.log('MongoDB reconectado.');
-});
-
-// Servidor
+// Iniciar servidor
 app.listen(port, () => {
-  console.log(`Server on port ${port}`);
+  console.log(`Server running on port ${port}`);
+  connectDB(); // 👈 Conecta al iniciar el servidor
 });
