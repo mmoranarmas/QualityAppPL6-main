@@ -18,6 +18,7 @@ mongoose.connect(URI, {
 .then(() => console.log("Conectado a MongoDB Atlas"))
 .catch((error) => console.error("Error al conectar a MongoDB:", error));
 
+
 // Manejo de eventos de conexión
 mongoose.connection.on('connected', () => {
   console.log('MongoDB conectado.');
