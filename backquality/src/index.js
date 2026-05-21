@@ -40,8 +40,7 @@ mongoose.connection.on('error', () => {
 });
 
 mongoose.connection.on('disconnected', () => {
-  console.warn('MongoDB desconectado. Reintentando...');
-  setTimeout(connectDB, 15000); // reintenta con mongoOptions
+  console.warn('MongoDB desconectado.');
 });
 
 mongoose.connection.on('reconnected', () => {
